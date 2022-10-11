@@ -49,7 +49,7 @@ class Fighter:
         """
         points=int(uniform(0.7,1.0)*10*self.get_strength()/aFighter.get_agility())
         aFighter._health_points=aFighter.get_health_points()-points
-        print(aFighter._health_points)
+        #print(aFighter._health_points)
         return aFighter.get_health_points()
     
     def shoot(self, aFighter):
@@ -72,25 +72,25 @@ class Fighter:
         return "\n".join([name, description, agility, strength, health_points, weapon])
         
     
-from weapon import Weapon
-
-lance_patates = Weapon("Lance patates", 5, 10)
-bazooka = Weapon("Bazooka", 20, 2)
-print(bazooka.summary())
-marcel = Fighter('Marcel', 'The best one') # on instancie avec les variables de la méthode __init__
-maurice = Fighter('Maurice', 'The second best one')# on instancie avec les variables de la méthode __init__
-
-marcel.take_weapon(lance_patates)
-print(maurice.summary())
-marcel.shoot(maurice)
-print(maurice.summary())
-marcel.take_weapon(bazooka)
-print(bazooka.summary())
-marcel.shoot(maurice)
-print(maurice.summary())
-print(lance_patates.get_owner())
-print(bazooka.get_owner())
-print(f"\n {marcel.summary()}")
+# from weapon import Weapon
+# 
+# lance_patates = Weapon("Lance patates", 5, 10)
+# bazooka = Weapon("Bazooka", 20, 2)
+# print(bazooka.summary())
+# marcel = Fighter('Marcel', 'The best one') # on instancie avec les variables de la méthode __init__
+# maurice = Fighter('Maurice', 'The second best one')# on instancie avec les variables de la méthode __init__
+# 
+# marcel.take_weapon(lance_patates)
+# print(maurice.summary())
+# marcel.shoot(maurice)
+# print(maurice.summary())
+# marcel.take_weapon(bazooka)
+# print(bazooka.summary())
+# marcel.shoot(maurice)
+# print(maurice.summary())
+# print(lance_patates.get_owner())
+# print(bazooka.get_owner())
+# print(f"\n {marcel.summary()}")
 
 # 
 # while marcel.get_health_points() > 0 and maurice.get_health_points() > 0:
@@ -108,6 +108,3 @@ print(f"\n {marcel.summary()}")
 # print(maurice.summary())
 # #print(marcel.get_agility())
 # #print(marcel.get_strenght())
-
-
-
