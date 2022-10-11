@@ -72,7 +72,7 @@ class Fighter:
         return "\n".join([name, description, agility, strength, health_points, weapon])
         
     
-from fighter_game.weapon import Weapon
+from weapon import Weapon
 
 lance_patates = Weapon("Lance patates", 5, 10)
 bazooka = Weapon("Bazooka", 20, 2)
